@@ -15,10 +15,6 @@
 
 </div>
 
-> 专利撰写最耗时的往往不是“写字”，而是把散落的实验记录、结构图、控制逻辑收敛成可保护的必要特征，再让交底、权利要求、说明书、附图和审查答复彼此对齐。这个插件把其中机械、重复、容易漏的部分工具化，把技术事实与法律判断留给发明人、专利代理师和 Agent。
->
-> **本项目不是法律意见，不替代专利代理师，也不自动向国知局递交文件。**
-
 ---
 
 ## 为什么做这个
@@ -490,34 +486,4 @@ git push -u origin main
 - 真实专利材料、客户名称、未公开实验数据不要提交到公开仓库；提 Issue 时请脱敏。
 - 建议定期备份 `outputs/patent-workbench/docket.json` 与 `cases/`。
 
-## License
 
-[MIT](LICENSE) © 2026 energy-patent contributors
-
-撰写方法、检查口径与申请书式参考了 [patent-disclosure-skill](https://github.com/handsomestWei/patent-disclosure-skill)（MIT，© handsomestWei）的公开技能文档，并针对储能领域与 DSH 工具链做了改写。本插件不复制其 Python 工具代码；`engine/` 下的实现为本项目独立编写。
-
-本项目与国知局、任何专利代理机构无隶属关系。
-
-## English summary
-
-**Energy Storage Patent Workbench** is an open-source [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin for Chinese energy-storage patent work. It registers 7 `patent_*` tools and 3 skills:
-
-- **Drafting** — ingest inventor materials, mine patent points, draft a disclosure, then produce claims, specification, abstract, and figures.
-- **Figures** — render CNIPA-style black-and-white flowcharts, block diagrams, and charts as 300 dpi PNG + SVG.
-- **Docket** — maintain a JSON docket with events, response/annuity deadlines, and a generated `TRACKER.md`.
-- **Office actions** — extract application number, mailing date, examiner, cited documents, statutes, objections, and response deadline from PDF/DOCX/TXT/EML.
-- **Mail** — read a patent mailbox over IMAP, save attachments, draft replies, and send only with explicit confirmation.
-- **Claim check** — mechanical checks for numbering, dependencies, multiple dependent claims, antecedent basis, and promotional language.
-
-It is **not legal advice** and does not file documents with CNIPA. See [安装](#安装) for setup and [已知限制](#已知限制) for current limitations.
-
-## 贡献
-
-欢迎 Issue 与 PR，尤其是：
-
-- 储能细分方向的术语、IPC/CPC 映射与审查案例；
-- 附图布局与中文排版改进；
-- 审查意见提取规则与测试样例（请脱敏）；
-- Linux/macOS 兼容性验证。
-
-提交前请确认没有包含真实客户资料、未公开技术、邮箱密码或 `.eml` 原文。
