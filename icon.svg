@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Energy storage patent workbench">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0f2f3f"/>
+  <path d="M16 14h22l10 10v26a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z" fill="#f4f7f5" stroke="#8fd8c3" stroke-width="1.6"/>
+  <path d="M38 14v10h10" fill="none" stroke="#8fd8c3" stroke-width="1.6"/>
+  <path d="M24 34l-4 0 0 12 4 0 0-12zm6 0 0 12m-3-6 6 0" fill="none" stroke="#0f2f3f" stroke-width="2" stroke-linecap="round"/>
+  <rect x="34" y="30" width="10" height="16" rx="2" fill="none" stroke="#0f2f3f" stroke-width="1.8"/>
+  <path d="M37 30v-3h4v3M34 38h10" fill="none" stroke="#0f2f3f" stroke-width="1.6"/>
+  <path d="M44 18l5-6M49 22l7-3" stroke="#f2c14e" stroke-width="2" stroke-linecap="round"/>
+</svg>

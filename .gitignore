@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# DSH / Node
+node_modules/
+dist/
+build/
+
+# Runtime data (never commit real patent material or mailbox data)
+outputs/
+*.eml
+patent-mail.config.json
+patent-workbench.config.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,41 @@
+{
+  "name": "@local/energy-patent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Energy-storage patent workbench: drafting, docket, office-action extraction, mailbox replies, and line-art figures for CNIPA filings.",
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "patent",
+    "energy-storage",
+    "cnipa",
+    "patent-drafting",
+    "office-action",
+    "docx",
+    "figure"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml",
+    "lib/**/*.js",
+    "engine/*.py",
+    "skills/**/*.md",
+    "examples/**",
+    "locale/*.json",
+    "docs/**",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
