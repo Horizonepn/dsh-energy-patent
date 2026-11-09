@@ -449,26 +449,6 @@ python engine/mail.py --config mail.json --action status --input -
 
 其中 `figures.py`、`build_docx.py`、`extract.py` 从 stdin 或 `--input <file>` 读 JSON；`mail.py` 需要 `--config` 与 `--action`。
 
-## 发布到 GitHub
-
-建议把 **`energy-patent-plugin/` 目录本身**作为仓库根目录上传，而不是把整个工作区（含 `outputs/`、原始 skill 压缩包、真实资料）一起上传。
-
-发布前检查：
-
-```bash
-git init
-git add .
-git status          # 确认没有 outputs/、*.eml、patent-mail.config.json、真实客户资料
-git commit -m "feat: energy storage patent workbench"
-git branch -M main
-git remote add origin <your-repo-url>
-git push -u origin main
-```
-
-- `.gitignore` 已默认排除 `outputs/`、`__pycache__/`、`*.eml`、`patent-mail.config.json`。
-- `docs/assets/` 只放 README 用的合成示例图；不要放客户图纸或未公开结构。
-- 仓库名建议 `dsh-energy-patent`；Topics 可填 `dsh-plugin`、`patent`、`energy-storage`、`cnipa`、`python-docx`。
-- 如果仓库根目录不是插件目录，安装时 `plugin_manager target` 要指向插件子目录，而不是仓库根。
 
 ## 相关项目
 
