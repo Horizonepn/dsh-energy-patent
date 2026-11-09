@@ -100,7 +100,7 @@ python -m pip install python-docx Pillow
 1. 克隆或下载本仓库到本地：
 
    ```bash
-   git clone <your-repo-url> dsh-energy-patent
+   git clone https://github.com/Horizonepn/dsh-energy-patent.git
    cd dsh-energy-patent
    ```
 

@@ -5,6 +5,10 @@
   "type": "module",
   "description": "Energy-storage patent workbench: drafting, docket, office-action extraction, mailbox replies, and line-art figures for CNIPA filings.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Horizonepn/dsh-energy-patent.git"
+  },
   "keywords": [
     "dsh-plugin",
     "patent",
